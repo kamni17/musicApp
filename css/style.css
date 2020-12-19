@@ -1,0 +1,17 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      "Advertisement Advertisement Advertisement Banner"
+      "Music-Player Music-Player Music-Player Banner"
+      "Music-Player Music-Player Music-Player Banner";
+  }
+  
+  .Banner { grid-area: Banner; }
+  
+  .Advertisement { grid-area: Advertisement; }
+  
+  .Music-Player { grid-area: Music-Player; }
+  
