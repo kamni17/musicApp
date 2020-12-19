@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px 20px;
     grid-template-areas:
       "Advertisement Advertisement Advertisement Banner"
@@ -13,5 +13,48 @@
   
   .Advertisement { grid-area: Advertisement; }
   
-  .Music-Player { grid-area: Music-Player; }
+  .Music-Player {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px 30px;
+    grid-template-areas:
+      "Music1 Music2 Music3 Music4"
+      "Music5 Music6 Music7 Music8"
+      "Music9 Music10 Music11 music12"
+      "Music13 Music14 Music15 Music16";
+    grid-area: Music-Player;
+  }
+  
+  .Music1 { grid-area: Music1; }
+  
+  .Music2 { grid-area: Music2; }
+  
+  .Music3 { grid-area: Music3; }
+  
+  .Music4 { grid-area: Music4; }
+  
+  .Music5 { grid-area: Music5; }
+  
+  .Music6 { grid-area: Music6; }
+  
+  .Music7 { grid-area: Music7; }
+  
+  .Music8 { grid-area: Music8; }
+  
+  .Music9 { grid-area: Music9; }
+  
+  .Music10 { grid-area: Music10; }
+  
+  .Music11 { grid-area: Music11; }
+  
+  .music12 { grid-area: music12; }
+  
+  .Music13 { grid-area: Music13; }
+  
+  .Music14 { grid-area: Music14; }
+  
+  .Music15 { grid-area: Music15; }
+  
+  .Music16 { grid-area: Music16; }
   
