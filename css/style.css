@@ -1,60 +1,110 @@
+html, body, .grid-container { height: 100%; margin: 0; }
+
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px 20px;
-    grid-template-areas:
-      "Advertisement Advertisement Advertisement Banner"
-      "Music-Player Music-Player Music-Player Banner"
-      "Music-Player Music-Player Music-Player Banner";
-  }
-  
-  .Banner { grid-area: Banner; }
-  
-  .Advertisement { grid-area: Advertisement; }
-  
-  .Music-Player {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 30px 30px;
-    grid-template-areas:
-      "Music1 Music2 Music3 Music4"
-      "Music5 Music6 Music7 Music8"
-      "Music9 Music10 Music11 music12"
-      "Music13 Music14 Music15 Music16";
-    grid-area: Music-Player;
-  }
-  
-  .Music1 { grid-area: Music1; }
-  
-  .Music2 { grid-area: Music2; }
-  
-  .Music3 { grid-area: Music3; }
-  
-  .Music4 { grid-area: Music4; }
-  
-  .Music5 { grid-area: Music5; }
-  
-  .Music6 { grid-area: Music6; }
-  
-  .Music7 { grid-area: Music7; }
-  
-  .Music8 { grid-area: Music8; }
-  
-  .Music9 { grid-area: Music9; }
-  
-  .Music10 { grid-area: Music10; }
-  
-  .Music11 { grid-area: Music11; }
-  
-  .music12 { grid-area: music12; }
-  
-  .Music13 { grid-area: Music13; }
-  
-  .Music14 { grid-area: Music14; }
-  
-  .Music15 { grid-area: Music15; }
-  
-  .Music16 { grid-area: Music16; }
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    "Header Header Header Header ."
+    "Advertisement Advertisement Advertisement Banner ."
+    "Music-Player Music-Player Music-Player Banner ."
+    "Music-Player Music-Player Music-Player Banner ."
+    "Music-Player Music-Player Music-Player Banner ."
+    "Music-Player Music-Player Music-Player Banner ."
+    "Footer Footer Footer Footer .";
+margin-left: 20px;
+}
+
+.Header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Logo Menu Menu Menu";
+  grid-area: Header;
+}
+
+.Logo { grid-area: Logo; }
+
+.Menu { grid-area: Menu; }
+
+.Advertisement { grid-area: Advertisement; }
+
+.Banner { grid-area: Banner; }
+
+.Music-Player {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Music1 Music2 Music3 Music4"
+    "Music5 Music6 Music7 music8"
+    "music9 music10 music11 music12"
+    "music13 music14 music15 music16";
+  grid-area: Music-Player;
+}
+
+.Music-Player * {
+    margin: 20px;
+}
+
+.Music1 { grid-area: Music1; }
+
+.Music2 { grid-area: Music2; }
+
+.Music3 { grid-area: Music3; }
+
+.Music4 { grid-area: Music4; }
+
+.Music6 { grid-area: Music6; }
+
+.Music5 { grid-area: Music5; }
+
+.Music7 { grid-area: Music7; }
+
+.music8 { grid-area: music8; }
+
+.music9 { grid-area: music9; }
+
+.music10 { grid-area: music10; }
+
+.music11 { grid-area: music11; }
+
+.music12 { grid-area: music12; }
+
+.music13 { grid-area: music13; }
+
+.music14 { grid-area: music14; }
+
+.music15 { grid-area: music15; }
+
+.music16 { grid-area: music16; }
+
+.Footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Volume Play-pause Play-pause Recorder";
+  grid-area: Footer;
+}
+
+.Volume { grid-area: Volume; }
+
+.Play-pause { grid-area: Play-pause; }
+
+.Recorder { grid-area: Recorder; }
+
+
+/* For presentation only, no need to copy the code below */
+.grid-container * {
+  border: 1px solid black;
+  position: relative;
+  border-radius: 5px;
+}
+
+
