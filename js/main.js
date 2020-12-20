@@ -77,6 +77,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-adventure';
             document.getElementsByClassName("Image").src = '../images/media-images/adventure.jpg';
             document.getElementById("SongTitle").innerHTML = "Adventure Music";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
         
@@ -85,6 +86,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-betterdays.mp3';
             document.getElementById("Album").src = '../images/media-images/betterdays.jpg';
             document.getElementById("SongTitle").innerHTML = "Better Days";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
         
@@ -93,6 +95,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-clearday.mp3';
             document.getElementById("Album").src = '../images/media-images/clearday.jpg';
             document.getElementById("SongTitle").innerHTML = "Clear Days";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
@@ -101,6 +104,7 @@ function PlaySelectedSong(Song)
                 Audio.src ='../media/Audio/bensound-dubstep.mp3';
                 document.getElementById("Album").src = '../images/media-images/dubstep.jpg';
                 document.getElementById("SongTitle").innerHTML = "Dub-Step";
+                document.getElementById("playMusic").src = "/images/pause.png";
                 Audio.play();
                 break;
 
@@ -109,6 +113,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-epic.mp3';
             document.getElementById("Album").src = '../images/media-images/epic.jpg';
             document.getElementById("SongTitle").innerHTML = "Epic";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
@@ -117,6 +122,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-energy.mp3';
             document.getElementById("Album").src = '../images/media-images/energy.jpg';
             document.getElementById("SongTitle").innerHTML = "Energy";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
@@ -125,6 +131,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-evolution.mp3';
             document.getElementById("Album").src = '../images/media-images/evolution.jpg';
             document.getElementById("SongTitle").innerHTML = "Evolution";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
@@ -133,6 +140,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-funnysong.mp3';
             document.getElementById("Album").src = '../images/media-images/funnysong.jpg';
             document.getElementById("SongTitle").innerHTML = "Funny Song";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
@@ -141,6 +149,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-inspire.mp3';
             document.getElementById("Album").src = '../images/media-images/inspire.jpg';
             document.getElementById("SongTitle").innerHTML = "Inspire Song";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
@@ -149,6 +158,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-moose.mp3';
             document.getElementById("Album").src = '../images/media-images/moose.jpg';
             document.getElementById("SongTitle").innerHTML = "Moose Song";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
@@ -157,6 +167,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-onceagain.mp3';
             document.getElementById("Album").src = '../images/media-images/onceagain.jpg';
             document.getElementById("SongTitle").innerHTML = "Once Again";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
@@ -165,6 +176,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-slowmotion.mp3';
             document.getElementById("Album").src = '../images/media-images/slowmotion.jpg';
             document.getElementById("SongTitle").innerHTML = "Slow Motion";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
@@ -173,6 +185,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-sunny.mp3';
             document.getElementById("Album").src = '../images/media-images/sunny.jpg';
             document.getElementById("SongTitle").innerHTML = "Sunny Song";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
@@ -181,6 +194,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-sweet.mp3';
             document.getElementById("Album").src = '../images/media-images/sweet.jpg';
             document.getElementById("SongTitle").innerHTML = "Sweet Song";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
@@ -189,6 +203,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-tenderness.mp3';
             document.getElementById("Album").src = '../images/media-images/tenderness.jpg';
             document.getElementById("SongTitle").innerHTML = "Tenderness";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
@@ -197,6 +212,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-tomorrow.mp3';
             document.getElementById("Album").src = '../images/media-images/tomorrow.jpg';
             document.getElementById("SongTitle").innerHTML = "Tomorrow";
+            document.getElementById("playMusic").src = "/images/pause.png";
             Audio.play();
             break;
 
