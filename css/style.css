@@ -37,8 +37,8 @@ align-items: center;
     display: inline-block;
     align-items: center;
     color: blanchedalmond;
-    padding-left: 850px;
-    padding-right: 850px;
+    padding-left: 50%;
+    margin-top: 5px;
     font-size: 50px;
     margin: 0px;
     border-radius: 0px;
@@ -67,6 +67,22 @@ align-items: center;
     border: 2px solid black;
 }
 
+.playWrapper {
+    opacity: 0;
+  position: absolute!important; z-index: 1;
+  top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6) url("/images/play-button.png") no-repeat scroll center center / 50px 50px;
+  }
+
+  .playWrapper .playBtn {
+    position: absolute!important; 
+    z-index: 2;
+    left: 0; right: 0; top: 0; bottom: 0; margin: auto; /* center */
+    width: 150px;
+    height: 150px;
+  }
+
 .Music-Player {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -74,146 +90,274 @@ align-items: center;
   gap: 0px 0px;
   grid-template-areas:
     "Music1 Music2 Music3 Music4"
-    "Music5 Music6 Music7 music8"
-    "music9 music10 music11 music12"
-    "music13 music14 music15 music16";
+    "Music5 Music6 Music7 Music8"
+    "Music9 Music10 Music11 Music12"
+    "Music13 Music14 Music15 Music16";
   grid-area: Music-Player;
   border: 2px solid black;
+  position: relative;
 }
 
 .Music-Player * {
-    margin: 20px;
-    border: 2px solid black;
+    
+    text-align: start;
+    color: white;
+    font-size: 20px;
+}
+.MusicTitle {
+    margin: 35px; 
+    color: rgb(0, 0, 0);
+    text-shadow: teal;
+    text-decoration-color: violet;
+    font-size: 15px;
+    text-align: center; 
+    font-style: oblique;
+    font-weight: bold;
+    border: 2px solid rgb(15, 15, 15);
+    background-color: wheat;
+
 }
 
-.Music1 { 
+.Music1 {
+    margin: 20px; 
     grid-area: Music1;
     background-image: url(../images/media-images/adventure.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    opacity: 0.8; 
+    border: 2px solid black;}
+
+    .Music1:hover .playWrapper{
+        opacity: 1;
+    }
 
 .Music2 { grid-area: Music2;
+    margin: 20px;
     background-image: url(../images/media-images/betterdays.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
+    opacity: 0.8; 
     background-size: cover;
-    background-repeat: no-repeat; } 
+    background-repeat: no-repeat; 
+    border: 2px solid black;} 
+
+    .Music2:hover .playWrapper{
+        opacity: 1;
+    }
 
 .Music3 { grid-area: Music3; 
+    margin: 20px;
     background-image: url(../images/media-images/clearday.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    opacity: 0.8; 
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
+
+    .Music3:hover .playWrapper{
+        opacity: 1;
+    }
 
 .Music4 { grid-area: Music4;
+    margin: 20px;
     background-image: url(../images/media-images/dubstep.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    opacity: 0.8; 
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
+
+    .Music4:hover .playWrapper{
+        opacity: 1;
+    }
 
 .Music5 { grid-area: Music5;
+    margin: 20px;
     background-image: url(../images/media-images/energy.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
+    opacity: 0.8; 
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
 
-.Music6 { grid-area: Music6; 
+    .Music5:hover .playWrapper{
+        opacity: 1;
+    }
+
+.Music6 { grid-area: Music6;
+    margin: 20px;
     background-image: url(../images/media-images/epic.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
+    opacity: 0.8; 
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
+
+    .Music6:hover .playWrapper{
+        opacity: 1;
+    }
 
 .Music7 { grid-area: Music7;
+    margin: 20px;
     background-image: url(../images/media-images/evolution.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
+    opacity: 0.8; 
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
 
-.music8 { grid-area: music8;
+    .Music7:hover .playWrapper{
+        opacity: 1;
+    }
+
+.Music8 { grid-area: Music8;
+    margin: 20px;
     background-image: url(../images/media-images/funnysong.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
+    opacity: 0.8; 
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
 
-.music9 { grid-area: music9;
+    .Music8:hover .playWrapper{
+        opacity: 1;
+    }
+
+.Music9 { grid-area: Music9;
+    margin: 20px;
     background-image: url(../images/media-images/inspire.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
+    opacity: 0.8; 
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
 
-.music10 { grid-area: music10;
+    .Music9:hover .playWrapper{
+        opacity: 1;
+    }
+
+.Music10 { grid-area: Music10;
+    margin: 20px;
     background-image: url(../images/media-images/moose.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
+    opacity: 0.8; 
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
 
-.music11 { grid-area: music11;
+    .Music10:hover .playWrapper{
+        opacity: 1;
+    }
+
+.Music11 { grid-area: Music11;
+    margin: 20px;
     background-image: url(../images/media-images/onceagain.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    opacity: 0.8; 
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
 
-.music12 { grid-area: music12;
+    .Music11:hover .playWrapper{
+        opacity: 1;
+    }
+
+.Music12 { grid-area: Music12;
+    margin: 20px;
     background-image: url(../images/media-images/slowmotion.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
+    opacity: 0.8; 
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
 
-.music13 { grid-area: music13;
+    .Music12:hover .playWrapper{
+        opacity: 1;
+    }
+
+.Music13 { grid-area: Music13;
+    margin: 20px;
     background-image: url(../images/media-images/sunny.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
+    opacity: 0.8; 
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
 
-.music14 { grid-area: music14;
+    .Music13:hover .playWrapper{
+        opacity: 1;
+    }
+
+.Music14 { grid-area: Music14;
+    margin: 20px;
     background-image: url(../images/media-images/sweet.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
+    opacity: 0.8; 
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
 
-.music15 { grid-area: music15;
+    .Music14:hover .playWrapper{
+        opacity: 1;
+    }
+
+.Music15 { grid-area: Music15;
+    margin: 20px;
     background-image: url(../images/media-images/tenderness.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
+    opacity: 0.8; 
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
 
-.music16 { grid-area: music16;
+    .Music15:hover .playWrapper{
+        opacity: 1;
+    }
+
+.Music16 { grid-area: Music16;
+    margin: 20px;
     background-image: url(../images/media-images/thelounge.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
+    opacity: 0.8; 
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+    border: 2px solid black;}
+
+    .Music16:hover .playWrapper{
+        opacity: 1;
+    }
 
 .Footer {
   display: grid;
@@ -236,11 +380,11 @@ align-items: center;
   position: relative;
   border-radius: 5px;
 }
-.grid-container *:after {
+/*.grid-container *:after {
   content:attr(class);
   position: absolute;
   top: 0;
   left: 0;
-}
+}*/
 
 
