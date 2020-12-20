@@ -183,7 +183,7 @@ align-items: center;
 
 .Music5 { grid-area: Music5;
     margin: 20px;
-    background-image: url(../images/media-images/energy.jpg);
+    background-image: url(../images/media-images/epic.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
@@ -198,7 +198,7 @@ align-items: center;
 
 .Music6 { grid-area: Music6;
     margin: 20px;
-    background-image: url(../images/media-images/epic.jpg);
+    background-image: url(../images/media-images/energy.jpg);
     width: 82%;
     height: 70%;
     background-position: center;
@@ -427,7 +427,13 @@ margin-top: 25px; }
  .SLIDE { 
      grid-area: SLIDE;
     align-items: center;
-margin-top: 15px; }
+margin-top: 15px; 
+display: grid;
+    grid-template-columns: 0.5fr 7fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+    "currentTime progressBar durationTime";}
 .Slider {
     w-webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
