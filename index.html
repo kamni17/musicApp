@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jukebox</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="grid-container">
@@ -147,8 +148,9 @@
             <input type="range" id="progress-bar" min="0" max="" value="0" class="Slider">
           </div>
           <div class="PLAY-BUTTON">
+            <audio src="media/Audio/bensound-adventure.mp3" id="audioFile"></audio>
             <button><img src="/images/previous.png" width="30px" height="30px"></button>
-            <button><img src="/images/play-button-arrowhead.png" width="30px" height="30px"></button>
+            <button><img src="/images/play-button-arrowhead.png" id="playMusic"width="30px" height="30px" onclick="PlayMusic()"></button>
             <button><img src="/images/previous.png" style="transform: rotate(180deg);" width="30px" height="30px"></button>
           </div>
           </div>
