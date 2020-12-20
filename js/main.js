@@ -45,6 +45,7 @@ function PlayMusic()
    });
     
 }
+// Play Next Song after current song is ended or user chooses to change Song
 function PlayNextSong()
 {
     Audio=document.getElementById("audioFile");
@@ -63,7 +64,7 @@ function PlayNextSong()
     document.getElementById("playMusic").src = "/images/pause.png";
     Audio.play();
 }
-
+// Play Previous Song
 function PlayPreviousSong()
 {
     Audio=document.getElementById("audioFile");
@@ -82,7 +83,7 @@ function PlayPreviousSong()
     document.getElementById("playMusic").src = "/images/pause.png";
     Audio.play();
 }
-
+// Mute and UnMute
 function Mute()
 {
     Audio=document.getElementById("audioFile");
@@ -103,7 +104,7 @@ function Mute()
       document.getElementById("MuteButton").style.backgroundColor = "red";
   }
 }
-
+// Decrease Volume and if volume is minimum set mute on and pause music
 function DecVolume()
 {
     Audio=document.getElementById("audioFile");
@@ -119,6 +120,7 @@ function DecVolume()
       document.getElementById("MuteButton").style.backgroundColor = "red";
     }
 }
+//Increase Volume
 function IncVolume()
 {
     Audio=document.getElementById("audioFile");
@@ -137,7 +139,7 @@ function IncVolume()
     }
 
 }
-
+// Play Selected Song by User
 function PlaySelectedSong(Song)
 { 
     Audio=document.getElementById("audioFile");
@@ -315,13 +317,13 @@ function formatTime(seconds) {
     return `${min}:${sec}`;
 };
 
-
+// Sync Progress Bar based on Song
 function changeProgressBar() {
     progressBar = document.querySelector('#progress-bar');
     Audio=document.getElementById("audioFile");
     Audio.currentTime = progressBar.value;
 }
-
+// Update Progress bar and time based on Song
 function updateProgressValue() {
     progressBar = document.querySelector('#progress-bar');
     Audio=document.getElementById("audioFile");
