@@ -38,10 +38,10 @@ function PlayMusic()
         document.getElementById("playMusic").src = "/images/play-button-arrowhead.png";
     }
 
- //   Audio.addEventListener('ended',function(){
+ Audio.addEventListener('ended',function(){
 
-  //      PlayNextSong();
-  //  });
+       PlayNextSong();
+   });
     
 }
 function PlayNextSong()
@@ -100,6 +100,7 @@ function Mute()
       Audio.pause();
       document.getElementById("playMusic").src = "/images/play-button-arrowhead.png";
       document.getElementById("MuteButton").style.backgroundColor = "red";
+      alert("Audio Muted");
   }
 }
 
@@ -130,7 +131,7 @@ function IncVolume()
         document.getElementById("MuteButton").style.backgroundColor = "";
     }
 
-    if(Audio.volume<1)
+    if(Audio.volume<0.91)
     {
         Audio.volume = Audio.volume + 0.10000;
     }
