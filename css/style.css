@@ -18,15 +18,32 @@ margin-left: 20px;
 
 .Header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "Logo Menu Menu Menu";
+    "Logo";
   grid-area: Header;
+  background-color: black;
 }
 
-.Logo { grid-area: Logo; }
+.Logo { grid-area: Logo;
+display: inline-block;
+align-items: center; 
+}
+
+.Logo h1
+{
+    display: inline-block;
+    align-items: center;
+    color: blanchedalmond;
+    padding-left: 850px;
+    padding-right: 850px;
+    font-size: 50px;
+    margin: 0px;
+    border-radius: 0px;
+    
+}
 
 .Menu { grid-area: Menu; }
 
@@ -37,6 +54,7 @@ margin-left: 20px;
     height: 150px;
     background-position: center;
     background-repeat: no-repeat;
+    border: 2px solid black;
     
 }
 
@@ -46,6 +64,7 @@ margin-left: 20px;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    border: 2px solid black;
 }
 
 .Music-Player {
@@ -59,10 +78,12 @@ margin-left: 20px;
     "music9 music10 music11 music12"
     "music13 music14 music15 music16";
   grid-area: Music-Player;
+  border: 2px solid black;
 }
 
 .Music-Player * {
     margin: 20px;
+    border: 2px solid black;
 }
 
 .Music1 { 
@@ -202,6 +223,7 @@ margin-left: 20px;
   grid-template-areas:
     "Volume Play-pause Play-pause Recorder";
   grid-area: Footer;
+  border: 2px solid black;
 }
 
 .Volume { grid-area: Volume; }
@@ -211,7 +233,6 @@ margin-left: 20px;
 .Recorder { grid-area: Recorder; }
 
 .grid-container * {
-  border: 1px solid black;
   position: relative;
   border-radius: 5px;
 }
