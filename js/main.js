@@ -1,6 +1,7 @@
 // Define Variables
 var Audio = document.getElementById("audioFile");
 var progressBar;
+var RecordingButton = document.getElementById("RecordAudio");
 
 // Define Song Array to build Play Previous and Play Next function
 AudioIndex = 0;
@@ -100,7 +101,6 @@ function Mute()
       Audio.pause();
       document.getElementById("playMusic").src = "/images/play-button-arrowhead.png";
       document.getElementById("MuteButton").style.backgroundColor = "red";
-      alert("Audio Muted");
   }
 }
 
