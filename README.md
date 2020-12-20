@@ -1,4 +1,4 @@
-# musicApp
-Project 2: Music App
+# JavaScript Project
 
-This Application is designed in HTML5 and Javascript. It plays music.
+Student Name: Kamni Gulati
+Student Number: N01449760
