@@ -1,7 +1,7 @@
 # JavaScript Project
 
-Student Name: Kamni Gulati
-Student Number: N01449760
+1. Student Name: Kamni Gulati
+2. Student Number: N01449760
 
 # Instructions
 1. Test functionality to click on differnet Tiles created for Music
