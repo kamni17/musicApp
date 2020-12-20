@@ -1,170 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jukebox</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jukebox</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js"></script>
 </head>
+
 <body>
-    <div class="grid-container">
-        <div class="Header">
-          <div class="Logo">
-            <h1>Jukebox</h1>
-          </div>
-          <div class="Menu"></div>
-        </div>
-        <div class="Advertisement"></div>
-        <div class="Banner"></div>
-        <div class="Music-Player">
-          <div class="Music1" onclick="PlaySelectedSong('Music1')">
-          <a href="#" class="playWrapper">
-          <span class="playBtn">
-          </span>
-          </a>
-          <p class="MusicTitle">Adventure Music</p>
-          </div>
-          <div class="Music2" onclick="PlaySelectedSong('Music2')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Better Days</p>
-          </div>
-          <div class="Music3" onclick="PlaySelectedSong('Music3')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Clear Day</p>
-          </div>
-          <div class="Music4" onclick="PlaySelectedSong('Music4')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">DubStep</p>
-          </div>
-          <div class="Music6" onclick="PlaySelectedSong('Music6')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Energy</p>
-          </div>
-          <div class="Music5" onclick="PlaySelectedSong('Music5')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Epic</p>
-          </div>
-          <div class="Music7" onclick="PlaySelectedSong('Music7')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Evolution</p>
-          </div>
-          <div class="Music8" onclick="PlaySelectedSong('Music8')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Funny Song</p>
-          </div>
-          <div class="Music9" onclick="PlaySelectedSong('Music9')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Inspire</p>
-          </div>
-          <div class="Music10" onclick="PlaySelectedSong('Music10')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Moose</p>
-          </div>
-          <div class="Music11" onclick="PlaySelectedSong('Music11')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Once Again</p>
-          </div>
-          <div class="Music12" onclick="PlaySelectedSong('Music12')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Slow Motion</p>
-          </div>
-          <div class="Music13" onclick="PlaySelectedSong('Music13')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Sunny</p>
-          </div>
-          <div class="Music14" onclick="PlaySelectedSong('Music14')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Sweet</p>
-          </div>
-          <div class="Music15" onclick="PlaySelectedSong('Music15')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Tenderness</p>
-          </div>
-          <div class="Music16" onclick="PlaySelectedSong('Music16')">
-            <a href="#" class="playWrapper">
-                <span class="playBtn">
-                </span>
-                </a>
-                <p class="MusicTitle">Tomorrow</p>
-          </div>
-        </div>
-        <div class="Footer">
-          <div class="Volume">
-          <button id="MuteButton"><img src="./images/mute.png" alt="Mute" onclick="Mute()"></button>
-          <button><img src="./images/reduced-volume.png" onclick="DecVolume()"></button>
-          <button><img src="./images/volume.png" onclick="IncVolume()"></button>
-          </div>
-          <div class="Play-pause">
-            <div class="Image">
-                <img id="Album" src="images/media-images/adventure.jpg" width="70px" height="60px">
-            </div>
-            <div class="SONGTITLE">
-                <p id="SongTitle">Adventure Music</p>
-            </div>
-          <div class="SLIDE">
-            <div class="currentTime"></div>
-            <div class="progressBar">
-            <input type="range"  id="progress-bar" min="0" max="" value="0" class="Slider" onchange="changeProgressBar()">
-          </div>
-            <div class="durationTime"></div>
-          </div>
-          <div class="PLAY-BUTTON">
-            <audio src="./media/Audio/bensound-adventure.mp3" id="audioFile"></audio>
-            <button><img src="./images/previous.png" width="30px" height="30px" onclick="PlayPreviousSong()"></button>
-            <button><img src="./images/play-button-arrowhead.png" id="playMusic"width="30px" height="30px" onclick="PlayMusic()"></button>
-            <button><img src="./images/previous.png" style="transform: rotate(180deg);" onclick="PlayNextSong()" width="30px" height="30px"></button>
-          </div>
-          </div>
-          <div class="sponsor">
-        <div class="FTEXT">
-            <h2 class="Rainbow">Royalty Free Music from Bensound.</h2>
-        </div>
-          </div>
-        </div>
-      </div>
+	<div class="grid-container">
+		<div class="Header">
+			<div class="Logo">
+				<h1>Jukebox</h1> </div>
+			<div class="Menu"></div>
+		</div>
+		<div class="Advertisement"></div>
+		<div class="Banner"></div>
+		<div class="Music-Player">
+			<div class="Music1" onclick="PlaySelectedSong('Music1')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+          </span> </a>
+				<p class="MusicTitle">Adventure Music</p>
+			</div>
+			<div class="Music2" onclick="PlaySelectedSong('Music2')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Better Days</p>
+			</div>
+			<div class="Music3" onclick="PlaySelectedSong('Music3')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Clear Day</p>
+			</div>
+			<div class="Music4" onclick="PlaySelectedSong('Music4')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">DubStep</p>
+			</div>
+			<div class="Music6" onclick="PlaySelectedSong('Music6')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Energy</p>
+			</div>
+			<div class="Music5" onclick="PlaySelectedSong('Music5')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Epic</p>
+			</div>
+			<div class="Music7" onclick="PlaySelectedSong('Music7')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Evolution</p>
+			</div>
+			<div class="Music8" onclick="PlaySelectedSong('Music8')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Funny Song</p>
+			</div>
+			<div class="Music9" onclick="PlaySelectedSong('Music9')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Inspire</p>
+			</div>
+			<div class="Music10" onclick="PlaySelectedSong('Music10')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Moose</p>
+			</div>
+			<div class="Music11" onclick="PlaySelectedSong('Music11')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Once Again</p>
+			</div>
+			<div class="Music12" onclick="PlaySelectedSong('Music12')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Slow Motion</p>
+			</div>
+			<div class="Music13" onclick="PlaySelectedSong('Music13')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Sunny</p>
+			</div>
+			<div class="Music14" onclick="PlaySelectedSong('Music14')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Sweet</p>
+			</div>
+			<div class="Music15" onclick="PlaySelectedSong('Music15')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Tenderness</p>
+			</div>
+			<div class="Music16" onclick="PlaySelectedSong('Music16')">
+				<a href="#" class="playWrapper"> <span class="playBtn">
+                </span> </a>
+				<p class="MusicTitle">Tomorrow</p>
+			</div>
+		</div>
+		<div class="Footer">
+			<div class="Volume">
+				<button id="MuteButton"><img src="./images/mute.png" alt="Mute" onclick="Mute()"></button>
+				<button><img src="./images/reduced-volume.png" onclick="DecVolume()"></button>
+				<button><img src="./images/volume.png" onclick="IncVolume()"></button>
+			</div>
+			<div class="Play-pause">
+				<div class="Image"> <img id="Album" src="images/media-images/adventure.jpg" width="70px" height="60px"> </div>
+				<div class="SONGTITLE">
+					<p id="SongTitle">Adventure Music</p>
+				</div>
+				<div class="SLIDE">
+					<div class="currentTime"></div>
+					<div class="progressBar">
+						<input type="range" id="progress-bar" min="0" max="" value="0" class="Slider" onchange="changeProgressBar()"> </div>
+					<div class="durationTime"></div>
+				</div>
+				<div class="PLAY-BUTTON">
+					<audio src="./media/Audio/bensound-adventure.mp3" id="audioFile"></audio>
+					<button><img src="./images/previous.png" width="30px" height="30px" onclick="PlayPreviousSong()"></button>
+					<button><img src="./images/play-button-arrowhead.png" id="playMusic" width="30px" height="30px" onclick="PlayMusic()"></button>
+					<button><img src="./images/previous.png" style="transform: rotate(180deg);" onclick="PlayNextSong()" width="30px" height="30px"></button>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="FTEXT">
+					<h2 class="Rainbow">Royalty Free Music from Bensound.</h2> </div>
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
