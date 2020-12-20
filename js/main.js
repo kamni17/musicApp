@@ -1,5 +1,6 @@
 // Define Variables
 var Audio;
+var progressBar;
 
 
 //Define Functions
@@ -42,7 +43,7 @@ function DecVolume()
     Audio=document.getElementById("audioFile");
     if(Audio.volume>0.1)
     {
-        Audio.volume = Audio.volume - 0.20;
+        Audio.volume = Audio.volume - 0.10000;
     }
     if(Audio.volume<0.1)
     {
@@ -55,14 +56,14 @@ function IncVolume()
     Audio=document.getElementById("audioFile");
     if(Audio.volume<0.1)
     {
-        Audio.volume = Audio.volume + 0.20;
+        Audio.volume = Audio.volume + 0.100000;
         Audio.muted = false;
         document.getElementById("MuteButton").style.backgroundColor = "";
     }
 
     if(Audio.volume<1)
     {
-        Audio.volume = Audio.volume + 0.20;
+        Audio.volume = Audio.volume + 0.10000;
     }
 
 }
@@ -220,4 +221,24 @@ function PlaySelectedSong(Song)
     }
 }
 
+function changeProgressBar() {
+
+    Audio=document.getElementById("audioFile");
+    Audio.currentTime = progressBar.value;
+}
+
+function updateProgressValue() {
+    progressBar = document.querySelector('#progress-bar');
+    Audio=document.getElementById("audioFile");
+    progressBar.max = Audio.duration;
+    progressBar.value = Audio.currentTime;
+   // document.querySelector('.currentTime').innerHTML = (formatTime(Math.floor(song.currentTime)));
+    //if (document.querySelector('.durationTime').innerHTML === "NaN:NaN") {
+    //    document.querySelector('.durationTime').innerHTML = "0:00";
+   // } else {
+   //     document.querySelector('.durationTime').innerHTML = (formatTime(Math.floor(song.duration)));
+   // }
+};
+
 //call Functions
+setInterval(updateProgressValue, 500);
