@@ -74,7 +74,7 @@ align-items: center;
   position: absolute!important; z-index: 1;
   top: 0;
   width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6) url("/images/play-button.png") no-repeat scroll center center / 50px 50px;
+  background: rgba(0,0,0,0.6) url("./images/play-button.png") no-repeat scroll center center / 50px 50px;
   }
 
   .playWrapper .playBtn {
