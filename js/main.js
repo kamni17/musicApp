@@ -30,13 +30,13 @@ function PlayMusic()
     if((Audio.paused) || (Audio.duration ==0))
     {
         Audio.play();
-        document.getElementById("playMusic").src = "/images/pause.png";
+        document.getElementById("playMusic").src = "./images/pause.png";
         document.getElementById("MuteButton").style.backgroundColor = "";
         Audio.volume =0.5;
     }
     else{
         Audio.pause();
-        document.getElementById("playMusic").src = "/images/play-button-arrowhead.png";
+        document.getElementById("playMusic").src = "./images/play-button-arrowhead.png";
     }
 
  Audio.addEventListener('ended',function(){
@@ -61,7 +61,7 @@ function PlayNextSong()
     Audio.src = AudioURL[AudioIndex];
     document.getElementById("Album").src = AudioAlbum[AudioIndex];
     document.getElementById("SongTitle").innerHTML = AudioTitle[AudioIndex];
-    document.getElementById("playMusic").src = "/images/pause.png";
+    document.getElementById("playMusic").src = "./images/pause.png";
     Audio.play();
 }
 // Play Previous Song
@@ -80,7 +80,7 @@ function PlayPreviousSong()
     Audio.src = AudioURL[AudioIndex];
     document.getElementById("Album").src = AudioAlbum[AudioIndex];
     document.getElementById("SongTitle").innerHTML = AudioTitle[AudioIndex];
-    document.getElementById("playMusic").src = "/images/pause.png";
+    document.getElementById("playMusic").src = "./images/pause.png";
     Audio.play();
 }
 // Mute and UnMute
@@ -91,7 +91,7 @@ function Mute()
   {
       Audio.muted = false;
       Audio.play();
-      document.getElementById("playMusic").src = "/images/pause.png";
+      document.getElementById("playMusic").src = "./images/pause.png";
       document.getElementById("MuteButton").style.backgroundColor = "";
       Audio.volume = 0.5;
       
@@ -100,7 +100,7 @@ function Mute()
   {
       Audio.muted = true;
       Audio.pause();
-      document.getElementById("playMusic").src = "/images/play-button-arrowhead.png";
+      document.getElementById("playMusic").src = "./images/play-button-arrowhead.png";
       document.getElementById("MuteButton").style.backgroundColor = "red";
   }
 }
@@ -116,7 +116,7 @@ function DecVolume()
     {
       Audio.muted = true;
       Audio.pause();
-      document.getElementById("playMusic").src = "/images/play-button-arrowhead.png";
+      document.getElementById("playMusic").src = "./images/play-button-arrowhead.png";
       document.getElementById("MuteButton").style.backgroundColor = "red";
     }
 }
@@ -129,7 +129,7 @@ function IncVolume()
         Audio.volume = Audio.volume + 0.100000;
         Audio.muted = false;
         Audio.play();
-        document.getElementById("playMusic").src = "/images/pause.png";
+        document.getElementById("playMusic").src = "./images/pause.png";
         document.getElementById("MuteButton").style.backgroundColor = "";
     }
 
@@ -150,7 +150,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-adventure.mp3';
             document.getElementById("Album").src = '../images/media-images/adventure.jpg';
             document.getElementById("SongTitle").innerHTML = "Adventure Music";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 0;
             Audio.play();
             break;
@@ -160,7 +160,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-betterdays.mp3';
             document.getElementById("Album").src = '../images/media-images/betterdays.jpg';
             document.getElementById("SongTitle").innerHTML = "Better Days";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 1;
             Audio.play();
             break;
@@ -170,7 +170,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-clearday.mp3';
             document.getElementById("Album").src = '../images/media-images/clearday.jpg';
             document.getElementById("SongTitle").innerHTML = "Clear Days";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 2;
             Audio.play();
             break;
@@ -180,7 +180,7 @@ function PlaySelectedSong(Song)
                 Audio.src ='../media/Audio/bensound-dubstep.mp3';
                 document.getElementById("Album").src = '../images/media-images/dubstep.jpg';
                 document.getElementById("SongTitle").innerHTML = "Dub-Step Song";
-                document.getElementById("playMusic").src = "/images/pause.png";
+                document.getElementById("playMusic").src = "./images/pause.png";
                 AudioIndex = 3;
                 Audio.play();
                 break;
@@ -190,7 +190,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-epic.mp3';
             document.getElementById("Album").src = '../images/media-images/epic.jpg';
             document.getElementById("SongTitle").innerHTML = "Epic Song";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 4;
             Audio.play();
             break;
@@ -200,7 +200,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-energy.mp3';
             document.getElementById("Album").src = '../images/media-images/energy.jpg';
             document.getElementById("SongTitle").innerHTML = "Energy Song";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 5;
             Audio.play();
             break;
@@ -210,7 +210,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-evolution.mp3';
             document.getElementById("Album").src = '../images/media-images/evolution.jpg';
             document.getElementById("SongTitle").innerHTML = "Evolution Song";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 6;
             Audio.play();
             break;
@@ -220,7 +220,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-funnysong.mp3';
             document.getElementById("Album").src = '../images/media-images/funnysong.jpg';
             document.getElementById("SongTitle").innerHTML = "Funny Song";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 7;
             Audio.play();
             break;
@@ -230,7 +230,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-inspire.mp3';
             document.getElementById("Album").src = '../images/media-images/inspire.jpg';
             document.getElementById("SongTitle").innerHTML = "Inspire Song";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 8;
             Audio.play();
             break;
@@ -240,7 +240,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-moose.mp3';
             document.getElementById("Album").src = '../images/media-images/moose.jpg';
             document.getElementById("SongTitle").innerHTML = "Moose Song";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 9;
             Audio.play();
             break;
@@ -250,7 +250,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-onceagain.mp3';
             document.getElementById("Album").src = '../images/media-images/onceagain.jpg';
             document.getElementById("SongTitle").innerHTML = "Once Again";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 10;
             Audio.play();
             break;
@@ -260,7 +260,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-slowmotion.mp3';
             document.getElementById("Album").src = '../images/media-images/slowmotion.jpg';
             document.getElementById("SongTitle").innerHTML = "Slow Motion";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 11;
             Audio.play();
             break;
@@ -270,7 +270,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-sunny.mp3';
             document.getElementById("Album").src = '../images/media-images/sunny.jpg';
             document.getElementById("SongTitle").innerHTML = "Sunny Song";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 12;
             Audio.play();
             break;
@@ -280,7 +280,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-sweet.mp3';
             document.getElementById("Album").src = '../images/media-images/sweet.jpg';
             document.getElementById("SongTitle").innerHTML = "Sweet Song";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 13;
             Audio.play();
             break;
@@ -290,7 +290,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-tenderness.mp3';
             document.getElementById("Album").src = '../images/media-images/tenderness.jpg';
             document.getElementById("SongTitle").innerHTML = "Tenderness";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 14;
             Audio.play();
             break;
@@ -300,7 +300,7 @@ function PlaySelectedSong(Song)
             Audio.src ='../media/Audio/bensound-tomorrow.mp3';
             document.getElementById("Album").src = '../images/media-images/tomorrow.jpg';
             document.getElementById("SongTitle").innerHTML = "Tomorrow";
-            document.getElementById("playMusic").src = "/images/pause.png";
+            document.getElementById("playMusic").src = "./images/pause.png";
             AudioIndex = 15;
             Audio.play();
             break;
