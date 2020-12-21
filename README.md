@@ -10,3 +10,5 @@
 # Resources
 
 1. Bensound music have been used
+2. Rainbow Effect has been used from https://codepen.io/cb_rn/pen/OVXXmj
+
