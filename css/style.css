@@ -46,7 +46,8 @@ html, body, .grid-container {
 	margin-top: 5px;
 	font-size: 50px;
 	margin: 0px;
-	border-radius: 0px;
+    border-radius: 0px;
+    
 }
 
 .Menu {
@@ -456,7 +457,9 @@ html, body, .grid-container {
 	grid-area: SONGTITLE;
 	text-align: left;
 	align-items: center;
-	margin-top: 25px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .SONGTITLE p {
